@@ -1,0 +1,6 @@
+Generador de iconos
+https://icons8.com/preloaders/en/circular/spinning-gear/
+foreground color #28a745
+
+Script cookies
+https://github.com/js-cookie/js-cookie

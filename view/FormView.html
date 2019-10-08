@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../resources/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../resources/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../resources/open-iconic-master/font/css/open-iconic-bootstrap.min.css">
+    <script src="../resources/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="../resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../resources/cookies.js"></script>
+    <link rel="stylesheet" href="FormView.css">
+</head>
+
+<body id="general">
+
+    <form id="form">
+        <div class="form-group row">
+            <label for="name" class="col-sm-3 col-form-label">Nombre</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="name"><span id="nameCheck"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="surname" class="col-sm-3 col-form-label">Apellido</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="surname"><span id="surnameCheck"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="address" class="col-sm-3 col-form-label">Direccion</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="address" ><span id="addressCheck"></span>
+            </div>
+        </div>
+        <fieldset class="form-group" id="country">
+            <div class="row">
+                <legend class="col-form-label col-sm-3 pt-0">Pais</legend>
+                <div class="col-sm-9">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pais" id="radioEspana" value="espana">
+                        <label class="form-check-label" for="gridRadios1">
+                            España
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pais" id="radioEEUU" value="EEUU">
+                        <label class="form-check-label" for="gridRadios2">
+                            E.E.U.U
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <label for="surname" class="col-sm-3 col-form-label">Codigo Postal</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="postCode"><span id="postCodeCheck"></span>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+                <label for="landline" class="col-sm-3 col-form-label">Telefono fijo</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="landline"><span id="landlineCheck"></span>
+                </div>
+              </div>
+              <div class="form-group row">
+                    <label for="mobilePhone" class="col-sm-3 col-form-label">Telefono Movil</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="mobilePhone" ><span id="mobilePhoneCheck"></span>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                        <label for="email" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="email"><span id="emailCheck"></span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                            <label for="name" class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="birthDate"><span id="birthDateCheck"></span>
+                            </div>
+                          </div>
+        <div class="form-group row">
+            <div class="col-sm-12 text-center">
+                <button type="submit" class="btn btn-primary" id="sendBtn" disabled>Enviar</button>
+            </div>
+        </div>
+    </form>
+<script src="FormView.js"></script>
+<script src="../service/FormService.js"></script>
+<script src="../controller/FormController.js"></script>
+<script src="../app.js"></script>
+
+
+</body>
+
+</html>

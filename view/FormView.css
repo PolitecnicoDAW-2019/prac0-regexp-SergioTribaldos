@@ -1,0 +1,29 @@
+#form{
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 45%
+}
+.col-form-label{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.btn-primary{
+    margin-top: 20px;
+width: 230px;
+}
+.form-control{
+    width: 80%;
+    display: inline;
+}
+.oi{
+    margin-left: 13px;
+    font-size: 140%;
+}
+.oi-check{
+    color:#45A163
+}
+.oi-x{
+    color:#eb4034
+}
